@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import "./App.css";
+import WeatherEngine from "./components/WeatherEngine";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <WeatherEngine location="10024" /> 
+            <WeatherEngine location="97035" /> 
+            <WeatherEngine location="32540" /> 
+            <WeatherEngine location="33109" /> 
+            <WeatherEngine location="30022" /> 
+            <WeatherEngine location="94562" />  
+       </div>
+    );
 }
 
 export default App;
